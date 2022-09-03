@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 2.8.4)
 
+set(CMAKE_EXE_LINKER_FLAGS "-lobjc -framework IOKit -framework CoreFoundation")
+
 set(CMAKE_MODULE_PATH
     ${CMAKE_SOURCE_DIR}/cmake
     ${CMAKE_MODULE_PATH})

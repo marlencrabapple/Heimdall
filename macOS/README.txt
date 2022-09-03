@@ -487,5 +487,6 @@ Appendix B - Installing Heimdall Suite from Source
 
         mkdir build
         cd build
-        cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release -DQt5Widgets_DIR=/usr/local/opt/qt5/lib/cmake/Qt5Widgets ..
-        make
+        cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=/usr/local/opt/qt@5 ..
+        LIBRARY_PATH=/usr/local/lib make
+
